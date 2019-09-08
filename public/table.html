@@ -45,7 +45,7 @@
     </div>
     <br>
     <br>
-    <table>
+    <table id="taskTable">
     <table border="1" align="center">
             <thead>
                 <tr>
@@ -97,6 +97,12 @@
 
                 </tr>
 </table>
+
+<script src='tablesort.min.js'></script>
+<script>
+new Tablesort(document.getElementById('taskTable'));
+
+</script>
 <br>
                 <form id="form" action="submitbook.html" method="get">
 
@@ -133,7 +139,9 @@
                     <div class= "form-group">
                     <input type="submit" name="submit" id="button" value="Submit Book">
                     </div>
+
                 </form>
+
   </body>
 
 
