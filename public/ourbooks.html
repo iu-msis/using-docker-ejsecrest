@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--link to style sheet-->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+
+  </head>
+
+  <body>
+
+<nav>
+    <nav class="navbar navbar-dark bg-dark">
+
+
+<ul class="nav">
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="meettheteam.html">Meet the Team</a></li>
+    <li><a href="ourbooks.html">Our Books</a></li>
+</ul>
+
+</nav>
+<br>
+<br>
+    <h1>Our Books</h1>
+
+<br>
+    <div class= "books">
+    <h4>Don't see one you Like? Just Add it to Our Suggestion Box</h4>
+    </div>
+    <br>
+    <br>
+    <table>
+    <table border="1" align="center">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Year Published</td>
+                    <td>Publisher</td>
+                    <td>Page Count</td>
+                    <td>MSRP</td>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>I Dreamt of Heaven</td>
+                    <td>Kirk Sloan</td>
+                    <td>1994</td>
+                    <td>Big Red Publishers</td>
+                    <td>358</td>
+                    <td>$19.99</td>
+
+                </tr>
+                <tr>
+                    <td>Lure the Truth</td>
+                    <td>Colton Howell</td>
+                    <td>2003</td>
+                    <td>Randomhouse Ltd.</td>
+                    <td>459</td>
+                    <td>$24.99</td>
+
+                </tr>
+                <tr>
+                    <td>Dagger in the Heart</td>
+                    <td>Zachery Heath</td>
+                    <td>2017</td>
+                    <td>Clearwater Bay Publishing</td>
+                    <td>113</td>
+                    <td>$7.99</td>
+
+                </tr>
+                <tr>
+                    <td>Too Much Drip</td>
+                    <td>Taylor Steinburg</td>
+                    <td>1996</td>
+                    <td>Jersey Boys Ltd.</td>
+                    <td>690</td>
+                    <td>$118.49</td>
+
+                </tr>
+</table>
+<br>
+                <form id="form" action="submitbook.html" method="get">
+
+                    <div class="form-group">
+                    <label for="exampleFormControlInput1">Email Address:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="Title">Title:</label>
+                    <input type="text" name="title" id="title" <br><br>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="year">Year Published:</label>
+                    <input type="number" name="year" id="year"><br><br>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="publisher">Publisher:</label>
+                    <input type="text" name="publisher" id="publisher"><br><br>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="pages">Pages:</label>
+                    <input type="number" name="page" id="page"><br><br>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="msrp">MSRP($):</label>
+                    <input type="number" name="msrp" id="msrp"><br><br>
+                    </div>
+
+                    <div class= "form-group">
+                    <input type="submit" name="submit" id="button" value="Submit Book">
+                    </div>
+                </form>
+  </body>
+
+
+
+
+
+</html>
