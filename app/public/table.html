@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
+    <title>Our Books</title>
 
   </head>
 
@@ -43,9 +43,12 @@
     <div class= "books">
     <h4>Don't see one you Like? Just Add it to Our Suggestion Box</h4>
     </div>
+
     <br>
+
     <br>
-    <table id="taskTable">
+
+    <table class="table" id="taskTable">
     <table border="1" align="center">
             <thead>
                 <tr>
@@ -96,13 +99,10 @@
                     <td>$118.49</td>
 
                 </tr>
+</tbody>
 </table>
 
-<script src='tablesort.min.js'></script>
-<script>
-new Tablesort(document.getElementById('taskTable'));
 
-</script>
 <br>
                 <form id="form" action="submitbook.html" method="get">
 
@@ -142,10 +142,15 @@ new Tablesort(document.getElementById('taskTable'));
 
                 </form>
 
+
+
+  <script src='js/tablesort.min.js'></script>
+
+  <script>
+  new Tablesort(document.getElementById('taskTable'));
+
+  </script>
   </body>
-
-
-
 
 
 </html>

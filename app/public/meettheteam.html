@@ -13,19 +13,16 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <title>Hello, world!</title>
+!-->
+    <title>Meet the Team</title>
   </head>
 
   <body>
-<nav>
     <nav class="navbar navbar-dark bg-dark">
-
-
-<ul class="nav">
+      <ul class="nav">
 
     <li><a href="index.html">Home</a></li>
     <li><a href="meettheteam.html">Meet the Team</a></li>
@@ -33,18 +30,37 @@
 </ul>
 </nav>
 
-<main>
 
-    <br>
-    <h1>Meet the Team</h1>
-    <br>
 
+  <h1>Meet the Team</h1>
+  <br>
+<div id="userinfo">
+  <span><a :href="users.picture.large"><img :src="users.picture.large" alt="profile picture"></a> </span> <br>
+    <link href="https://randomuser.me/photos"> <small> <i> Source: Randomuser.me </i> </small>
+    <br><br>
+  <strong>Name: </strong> <span> {{users.name.first}} {{users.name.last}} </span> <br>
+  <strong>Country of Origin: </strong> <span> {{users.nat}} </span> <br>
+  <strong>Birthdate: </strong> <span> {{users.dob.date}} </span> <br>
+  <strong>Age: </strong> <span> {{users.dob.age}} </span> <br>
+  <strong>Email: </strong> <span> <a :href="'mailto:' + users.email"> {{users.email}}</a> </span> <br>
+</div>
+
+<script src="https://cdn.jsdeliver.net/npm/vue/dist/vue.js"></script>
+<script src="js/randomuser.js"></script>
+
+  </body>
+</html>
+
+
+<!--
 <a target="_blank" href="images/headshot.jpg">
     <img src="images/headshot.jpg" alt="Elijah Hansen" class="center" width="350" height="400">
     <link href="https://www.google.com/search?hl=en&authuser=0&tbm=isch&q=stock+headshots&chips=q:stock+headshots,g_1:business:Us3weI4dUVg%3D&usg=AI4_-kTNQ0XItF-E-FEj51pAiWhd78BIXQ&sa=X&ved=0ahUKEwi8i_TX17XkAhXpHjQIHYlSBvUQ4lYIKygA&biw=1504&bih=892&dpr=1.5#imgrc=DLhIV9u07HNyKM:"> <small> <i> Source: Google Images</i></small>
 </a>
-
+-->
+<!--
 <div class ="team">
+
     <h4><u>Elijah Hansen, CEO</u></h4>
     <h5>Phone: 812-555-5555</h5>
     <h5>Email: <a href="mailto:elijah.hansen58@elisbooks.org"> elijah.hansen58@elisbooks.org</a></h5>
@@ -53,14 +69,20 @@
     <h5>Nationality: American</h5>
     <hr>
 
-</div>
 
+</div>
+-->
+
+<!--
 <a target="_blank" href="images/headshot2.jpg">
     <img src="images/headshot2.jpg" alt="Roberta Rice" class="center" height="350">
     <link href="https://www.google.com/search?hl=en&authuser=0&tbm=isch&q=stock+headshots&chips=q:stock+headshots,g_1:business:Us3weI4dUVg%3D&usg=AI4_-kTNQ0XItF-E-FEj51pAiWhd78BIXQ&sa=X&ved=0ahUKEwi8i_TX17XkAhXpHjQIHYlSBvUQ4lYIKygA&biw=1504&bih=892&dpr=1.5#imgrc=136sJbOWMk37gM:"> <small> <i> Source: Google Images</i></small>
 </a>
-
+-->
+<!--
 <div class ="team1">
+-->
+<!--
     <h4><u>Roberta Rice, CTO</u></h4>
     <h5>Phone: 812-456-7890</h5>
     <h5>Email: <a href="mailto:roberta.rice@elisbooks.org"> roberta.rice@elisbooks.org</a></h5>
@@ -69,13 +91,18 @@
     <h5>Nationality: Canadian</h5>
     <hr>
 </div>
+-->
 
+<!--
 <a target="_blank" href="images/headshot3.jpg">
     <img src="images/headshot3.jpg" alt="Peter Murphy" class="center" height="450">
     <link href="https://www.google.com/search?hl=en&authuser=0&tbm=isch&q=stock+headshots&chips=q:stock+headshots,g_1:business:Us3weI4dUVg%3D&usg=AI4_-kTNQ0XItF-E-FEj51pAiWhd78BIXQ&sa=X&ved=0ahUKEwi8i_TX17XkAhXpHjQIHYlSBvUQ4lYIKygA&biw=1504&bih=892&dpr=1.5#imgrc=cZtGXlk_1gi58M:"> <small> <i> Source: Google Images</i></small>
 </a>
+-->
 
+<!--
 <div class ="team2">
+
     <h4><u>Peter Murphy, CFO</u></h4>
     <h5>Phone: 952-345-6789</h5>
     <h5>Email: <a href="mailto:p.murph@elisbooks.org"> pmurph@elisbooks.org</a></h5>
@@ -84,15 +111,4 @@
     <h5>Nationality: French</h5>
     <hr>
 </div>
-
-
-</main>
-
-
-
-
-
-
-
-  </body>
-</html>
+-->
