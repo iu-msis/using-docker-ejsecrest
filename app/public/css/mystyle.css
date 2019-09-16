@@ -131,3 +131,7 @@ body
     border-radius: 10px;
     color: #808080;
   }
+
+  th[role=columnheader]:not(.no-sort) {
+	cursor: pointer;
+}
