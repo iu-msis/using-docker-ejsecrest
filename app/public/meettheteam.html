@@ -25,16 +25,17 @@
     <nav class="navbar navbar-dark bg-dark">
       <ul class="nav">
 
-    <li><a href="index.html">Home</a></li>
-    <li><a href="meettheteam.html">Meet the Team</a></li>
-    <li><a href="ourbooks.html">Our Books</a></li>
-</ul>
-</nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="meettheteam.html">Meet the Team</a></li>
+          <li><a href="ourbooks.html">Our Books</a></li>
+      </ul>
+    </nav>
 
 
 
   <h1>Meet the Team</h1>
   <br>
+
 <div id="userinfo">
   <span><a :href="users.picture.large"><img :src="users.picture.large" alt="profile picture"></a> </span> <br>
     <link href="https://randomuser.me/photos"> <small> <i> Source: Randomuser.me </i> </small>
@@ -46,7 +47,7 @@
   <strong>Email: </strong> <span> <a :href="'mailto:' + users.email"> {{users.email}}</a> </span> <br>
 </div>
 
-<script src="https://cdn.jsdeliver.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/randomuser.js"></script>
 
   </body>
