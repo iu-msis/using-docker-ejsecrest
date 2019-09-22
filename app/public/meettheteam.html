@@ -36,7 +36,7 @@
   <h1>Meet the Team</h1>
   <br>
 
-<div id="userinfo">
+<div id="userinfo" v-on:submit="fetchUser">
   <span><a :href="users.picture.large"><img :src="users.picture.large" alt="profile picture"></a> </span> <br>
     <link href="https://randomuser.me/photos"> <small> <i> Source: Randomuser.me </i> </small>
     <br><br>
@@ -45,6 +45,9 @@
   <strong>Birthdate: </strong> <span> {{users.dob.date}} </span> <br>
   <strong>Age: </strong> <span> {{users.dob.age}} </span> <br>
   <strong>Email: </strong> <span> <a :href="'mailto:' + users.email"> {{users.email}}</a> </span> <br>
+<form @submit.prevent="fetchUsers">
+  <button type="submit">Refresh</button>
+</form>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
